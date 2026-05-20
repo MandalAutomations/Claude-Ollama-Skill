@@ -14,10 +14,10 @@ Use Ollama (via `scripts/ollama-call.sh` or the helpers in `scripts/`) when **al
 1. The subtask is mechanical or pattern-matching, not reasoning. Examples: "give me a 3-line summary of this log file", "extract every IP address from this text", "classify this commit message as feat/fix/chore".
 2. The input is large enough that piping it into Claude's context would be wasteful (rule of thumb: more than ~200 lines or ~2000 tokens, AND you don't need every detail).
 3. A wrong answer is recoverable — you can re-read the source yourself if the local model gets it wrong.
+4. Writing GitHub workflows
 
 ## When NOT to use Ollama
 
-- Writing or editing code.
 - Anything the user asked **you** (Claude) to do directly. They want your judgment, not tinyllama's.
 - Security-sensitive parsing (auth tokens, secrets — don't pipe them through any model).
 - Anything where a hallucinated answer would silently cause harm.
