@@ -1,4 +1,4 @@
-# Ollama-Skill
+# Claude-Ollama-Skill
 
 A Claude Code skill that teaches Claude to offload narrow, mechanical subtasks to a **local Ollama instance** instead of burning Anthropic tokens on them.
 
@@ -27,7 +27,7 @@ The fundamental insight: Claude (the hosted model) can't reach `localhost:11434`
 Drop the skill into your Claude Code skills directory:
 
 ```bash
-git clone https://github.com/evanallen13/Ollama-Skill ~/.claude/skills/ollama
+git clone https://github.com/MandalAutomations/Claude-Ollama-Skill ~/.claude/skills/ollama
 ```
 
 Claude Code auto-discovers skills under `~/.claude/skills/` and loads `SKILL.md` when its description matches the task.
